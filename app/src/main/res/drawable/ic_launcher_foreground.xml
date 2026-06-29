@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Background -->
+    <path android:fillColor="#005c55" android:pathData="M0,0h108v108h-108z"/>
+    <!-- Rounded corners via clip -->
+    <path android:fillColor="#005c55"
+        android:pathData="M20,0 H88 A20,20 0 0 1 108,20 V88 A20,20 0 0 1 88,108 H20 A20,20 0 0 1 0,88 V20 A20,20 0 0 1 20,0 Z"/>
+    <!-- Letter N -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M28,28 L28,80 L40,80 L40,48 L68,80 L80,80 L80,28 L68,28 L68,60 L40,28 Z"/>
+    <!-- Teal dot accent -->
+    <circle android:fillColor="#6df5e1" android:cx="82" android:cy="28" android:r="10"/>
+    <path android:fillColor="#005c55"
+        android:pathData="M78,24 L78,32 L86,28 Z"/>
+</vector>

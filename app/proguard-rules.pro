@@ -1,0 +1,3 @@
+-keep class com.naijatools.app.** { *; }
+-keepattributes *Annotation*
+-dontwarn okhttp3.**

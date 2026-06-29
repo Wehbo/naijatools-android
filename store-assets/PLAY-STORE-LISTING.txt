@@ -1,0 +1,186 @@
+# NaijaTools — Google Play Store Submission Package
+# =====================================================
+# Copy-paste these into Google Play Console
+
+
+## APP TITLE (max 30 chars)
+NaijaTools - Digital Toolkit
+
+
+## SHORT DESCRIPTION (max 80 chars)
+Free all-in-one toolkit for Nigerians: PDF, GPA, QR, Invoice & more
+
+
+## FULL DESCRIPTION (max 4000 chars)
+NaijaTools is Nigeria's most complete free digital toolkit — designed by Nigerians, for Nigerians.
+
+Everything runs on your device. Your files never leave your phone.
+
+━━━ 📚 STUDENT HUB ━━━
+
+🎓 GPA Calculator
+Calculate your semester GPA on the Nigerian 5-point grading scale. Add all your courses, units and grades — get your result instantly.
+
+🎓 CGPA Calculator
+Track your Cumulative GPA across all semesters. Know your exact degree classification at any point.
+
+📝 JAMB Score Predictor
+Enter your UTME subject scores to calculate your total and see your admission outlook for Federal Universities, State Universities, and Polytechnics.
+
+📊 Post-UTME Aggregate Calculator
+Calculate your weighted admission aggregate from your JAMB and Post-UTME scores. Choose your institution's weighting formula.
+
+📋 O-Level Points Calculator
+Convert your WAEC/NECO grades to O-Level aggregate points for Direct Entry admission.
+
+━━━ 📄 PDF TOOLS ━━━
+
+🔗 Merge PDF — Combine multiple PDF files into one document
+✂️ Split PDF — Extract specific pages from any PDF
+🗜️ Compress PDF — Reduce file size while keeping quality
+🔄 Rotate PDF — Fix sideways or upside-down PDF pages
+
+━━━ 🖼️ IMAGE TOOLS ━━━
+
+📷 Image Compressor — Reduce image file size with quality control slider
+📐 Image Resizer — Resize to exact pixel dimensions with aspect ratio lock
+✂️ Image Cropper — Crop to 1:1, 16:9, 4:3, 9:16 or free dimensions
+🔄 JPG to PNG — Convert JPEG images to PNG format instantly
+
+━━━ 💼 BUSINESS & UTILITY ━━━
+
+🧾 Invoice Generator — Create professional Nigerian invoices with VAT calculation and bank payment details. Download and share instantly.
+
+💱 Naira Converter — Convert between NGN, USD, GBP, and EUR using NAFEX and parallel market rates.
+
+🏦 Loan Calculator — Calculate monthly repayments, total interest, and see amortization for any Nigerian loan.
+
+📱 QR Code Generator — Create custom QR codes for URLs, WhatsApp links, payments, or any text. Customize colors and download as PNG.
+
+📏 Unit Converter — Convert length, weight, temperature, area, volume, and speed between any units.
+
+🏢 Business Name Generator — Generate creative Nigerian business names by industry and style (Modern, Yoruba, Igbo, Hausa, Professional).
+
+━━━ WHY NAIJATOOLS? ━━━
+
+✅ 100% FREE — No subscriptions, no premium tiers
+✅ PRIVACY FIRST — Files never leave your device
+✅ OFFLINE — Works without internet after first load
+✅ NO SIGNUP — No account needed, ever
+✅ MADE FOR NIGERIA — Naira currency, WAEC grades, Nigerian bank details, local university systems
+
+
+## CATEGORY
+Productivity
+
+
+## TAGS (up to 5)
+PDF tools, GPA calculator, JAMB, invoice generator, Nigeria
+
+
+## CONTENT RATING
+Rating: Everyone (PEGI 3 / ESRB E)
+- No violence
+- No sexual content
+- No language issues
+- Not primarily for children but suitable for all ages
+
+
+## PRICING
+Free
+
+
+## COUNTRIES
+Nigeria (primary), then All countries
+
+
+## CONTACT EMAIL (for Play Store listing)
+support@naijatools.com.ng
+
+
+## PRIVACY POLICY URL
+https://[your-github-username].github.io/naijatools-android/privacy-policy.html
+(deploy privacy-policy.html to GitHub Pages — see checklist below)
+
+
+## DATA SAFETY ANSWERS (Play Console → Data Safety section)
+Q: Does your app collect or share any of the required user data types?
+A: No
+
+Q: Is all of the user data collected by your app encrypted in transit?
+A: Yes (HTTPS only for CDN resources)
+
+Q: Do you provide a way for users to request that their data is deleted?
+A: N/A — No data is collected
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## ✅ PLAY STORE SUBMISSION CHECKLIST
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+### BEFORE BUILDING
+[ ] Register at play.google.com/console ($25 one-time fee)
+[ ] Create new app in Play Console
+[ ] Fill in app name: "NaijaTools - Digital Toolkit"
+
+### KEYSTORE (do this ONCE — never lose these files)
+[ ] Generate keystore on any PC:
+    keytool -genkey -v -keystore naijatools.jks \
+      -alias naijatools -keyalg RSA \
+      -keysize 2048 -validity 10000
+[ ] Back up naijatools.jks in a safe place (Google Drive, USB)
+[ ] Convert to base64:
+    base64 -w 0 naijatools.jks > keystore-b64.txt  (Linux/Mac)
+    certutil -encode naijatools.jks keystore-b64.txt  (Windows)
+
+### GITHUB SECRETS (repo → Settings → Secrets → Actions)
+[ ] KEYSTORE_BASE64  — paste contents of keystore-b64.txt
+[ ] KEYSTORE_PASSWORD — your keystore password
+[ ] KEY_ALIAS — naijatools
+[ ] KEY_PASSWORD — your key password
+
+### BUILD THE AAB
+[ ] Push any commit to trigger GitHub Actions
+[ ] Download artifact: NaijaTools-release-aab-N.zip
+[ ] Extract to get: app-release.aab
+
+### PRIVACY POLICY
+[ ] Go to your GitHub repo → Settings → Pages → Enable GitHub Pages
+[ ] Upload privacy-policy.html to repo root
+[ ] Your URL: https://[username].github.io/[repo-name]/privacy-policy.html
+[ ] Paste this URL into Play Console → App Content → Privacy Policy
+
+### STORE LISTING ASSETS (upload from store-assets/ folder)
+[ ] App icon: icon-512.png (512×512 PNG) ✅ included
+[ ] Feature graphic: feature-graphic-1024x500.png (1024×500) ✅ included
+[ ] Phone screenshots: screenshot-phone-1.png, -2.png, -3.png ✅ included
+    (minimum 2 required — we have 3)
+
+### PLAY CONSOLE SECTIONS TO COMPLETE
+[ ] Main store listing — paste description above
+[ ] Content rating — complete questionnaire (select "Utility" category)
+[ ] Data safety — answer "No" to data collection (see answers above)
+[ ] App content — fill in target audience (Everyone), ads (No ads)
+[ ] Pricing & distribution — Free, select Nigeria + worldwide
+[ ] Privacy policy URL — paste your GitHub Pages URL
+
+### UPLOAD AAB & SUBMIT
+[ ] Production → Create new release → Upload app-release.aab
+[ ] Review release → Start rollout to Production
+[ ] Wait 1-3 days for Google review ✅
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## TIPS FOR FASTER APPROVAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. The app loads local files (file:///android_asset) not a remote URL
+   → This avoids the "WebView wrapper" policy rejection
+
+2. We have real native functionality (file picker, share, offline)
+   → Google requires WebView apps to add "native" value beyond a website
+
+3. Data safety section: declare NO data collection
+   → Google will verify this — our app genuinely collects nothing
+
+4. If rejected for any reason, check the rejection email carefully
+   and resubmit after fixing — most first-time rejections are fixable
